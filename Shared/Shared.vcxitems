@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{2224225c-f1c6-445b-a63f-4cbdd6e9cfa9}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AllocatedMemoryMessage\AllocatedMemoryMessage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FileMappingIO\FileMappingIO.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MemoryInfo\MemoryInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AllocatedMemoryMessage\AllocatedMemoryMessage.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FileMappingIO\FileMappingIO.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MemoryDetection\MemoryDetection.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MemoryInfo\MemoryInfo.h" />
+  </ItemGroup>
+</Project>

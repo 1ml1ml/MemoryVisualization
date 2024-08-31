@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MemoryDetection\MemoryDetection.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MemoryInfo\MemoryInfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AllocatedMemoryMessage\AllocatedMemoryMessage.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FileMappingIO\FileMappingIO.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MemoryInfo\MemoryInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AllocatedMemoryMessage\AllocatedMemoryMessage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FileMappingIO\FileMappingIO.cpp" />
+  </ItemGroup>
+</Project>
